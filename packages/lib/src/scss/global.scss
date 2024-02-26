@@ -1,0 +1,49 @@
+html {
+    font-size: 62.5%;
+    font-size: calc(1em * 0.625);
+    overscroll-behavior: none;
+
+    body {
+        margin: 0;
+        text-rendering: optimizeLegibility;
+        touch-action: manipulation;
+        -webkit-user-drag: none;
+        -ms-content-zooming: none;
+        // overscroll-behavior-y: none;
+        overscroll-behavior: none;
+    }
+}
+
+.radiium-ui {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    color: var(--color);
+    background-color: var(--background-level-0);
+    font-family: var(--default-font-family);
+    font-size: var(--default-font-size);
+    font-weight: var(--default-font-weight);
+    font-style: var(--default-font-style);
+    line-height: var(--default-line-height);
+    letter-spacing: var(--default-letter-spacing);
+    text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// @media (max-width: 684px) {
+//     body {
+//         font-size: calc(var(--default-font-size) * 0.85);
+//     }
+// }
+
+// @media (max-width: 382px) {
+//     body {
+//         font-size: calc(var(--default-font-size-base) * 0.75);
+//     }
+// }
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}

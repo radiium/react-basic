@@ -1,0 +1,52 @@
+body.Dialog-open {
+    height: 100% !important;
+    overflow: hidden !important;
+}
+
+.Dialog {
+    position: relative;
+    color: var(--color);
+    background: var(--background-level-0);
+    border-radius: var(--dialog-border-radius);
+    padding: var(--dialog-padding);
+    min-width: 150px;
+    max-width: 90%;
+    min-height: 100px;
+    max-height: 90%;
+    border: 1px solid var(--gray-5);
+
+    &::backdrop {
+        background: rgba(0, 0, 0, 0.3);
+        // backdrop-filter: blur(2px);
+    }
+
+    .Dialog-close-btn {
+        float: right;
+    }
+
+    // Sizes
+    &.Dialog-size-1 {
+        --dialog-padding: var(--space-3);
+        --dialog-border-radius: var(--radius-4);
+    }
+    &.Dialog-size-2 {
+        --dialog-padding: var(--space-4);
+        --dialog-border-radius: var(--radius-4);
+    }
+    &.Dialog-size-3 {
+        --dialog-padding: var(--space-5);
+        --dialog-border-radius: var(--radius-5);
+    }
+    &.Dialog-size-4 {
+        --dialog-padding: var(--space-6);
+        --dialog-border-radius: var(--radius-5);
+    }
+    &.Dialog-size-5 {
+        --dialog-padding: var(--space-8);
+        --dialog-border-radius: var(--radius-6);
+    }
+
+    &.Dialog-no-padding {
+        --dialog-padding: 0;
+    }
+}

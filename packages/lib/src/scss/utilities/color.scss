@@ -1,0 +1,67 @@
+///
+/// COLOR UTILITIES
+///
+
+// primary
+.text-primary {
+	color: var(--color-primary);
+}
+.bg-primary {
+	background-color: var(--color-primary);
+}
+
+// info
+.text-info {
+	color: var(--color-blue);
+}
+.bg-info {
+	background-color: var(--color-blue);
+}
+
+// success
+.text-success {
+	color: var(--color-green);
+}
+.bg-success {
+	background-color: var(--color-green);
+}
+
+// warning
+.text-warning {
+	color: var(--color-yellow);
+}
+.bg-warning {
+	background-color: var(--color-yellow);
+}
+
+// danger
+.text-danger {
+	color: var(--color-red);
+}
+.bg-danger {
+	background-color: var(--color-red);
+}
+
+// light
+.text-light {
+	color: var(--color-light);
+}
+.bg-light {
+	background-color: var(--color-light);
+}
+
+// medium
+.text-medium {
+	color: var(--color-medium);
+}
+.bg-medium {
+	background-color: var(--color-medium);
+}
+
+// dark
+.text-dark {
+	color: var(--color-dark);
+}
+.bg-dark {
+	background-color: var(--color-dark);
+}

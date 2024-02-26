@@ -1,0 +1,80 @@
+.Text {
+    // Colors
+    color: var(--accent-a11, var(--color));
+
+    // Sizes
+    &.Text-size-1 {
+        font-size: var(--font-size-1);
+        line-height: var(--line-height-1);
+        letter-spacing: var(--letter-spacing-1);
+    }
+    &.Text-size-2 {
+        font-size: var(--font-size-2);
+        line-height: var(--line-height-2);
+        letter-spacing: var(--letter-spacing-2);
+    }
+    &.Text-size-3 {
+        font-size: var(--font-size-3);
+        line-height: var(--line-height-3);
+        letter-spacing: var(--letter-spacing-3);
+    }
+    &.Text-size-4 {
+        font-size: var(--font-size-4);
+        line-height: var(--line-height-4);
+        letter-spacing: var(--letter-spacing-4);
+    }
+    &.Text-size-5 {
+        font-size: var(--font-size-5);
+        line-height: var(--line-height-5);
+        letter-spacing: var(--letter-spacing-5);
+    }
+    &.Text-size-6 {
+        font-size: var(--font-size-6);
+        line-height: var(--line-height-6);
+        letter-spacing: var(--letter-spacing-6);
+    }
+    &.Text-size-7 {
+        font-size: var(--font-size-7);
+        line-height: var(--line-height-7);
+        letter-spacing: var(--letter-spacing-7);
+    }
+    &.Text-size-8 {
+        font-size: var(--font-size-8);
+        line-height: var(--line-height-8);
+        letter-spacing: var(--letter-spacing-8);
+    }
+    &.Text-size-9 {
+        font-size: var(--font-size-9);
+        line-height: var(--line-height-9);
+        letter-spacing: var(--letter-spacing-9);
+    }
+
+    // Weight
+    &.Text-weight-light {
+        font-weight: var(--font-weight-light);
+    }
+    &.Text-weight-regular {
+        font-weight: var(--font-weight-regular);
+    }
+    &.Text-weight-medium {
+        font-weight: var(--font-weight-medium);
+    }
+    &.Text-weight-bold {
+        font-weight: var(--font-weight-bold);
+    }
+
+    // Alignement
+    &.Text-align-start {
+        text-align: start;
+    }
+    &.Text-align-center {
+        text-align: center;
+    }
+    &.Text-align-end {
+        text-align: end;
+    }
+
+    &.Text-disabled {
+        opacity: 0.5 !important;
+    }
+}

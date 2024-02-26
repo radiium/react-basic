@@ -1,0 +1,40 @@
+.Accordion {
+    overflow: hidden;
+    min-width: 100%;
+    display: grid;
+    grid-template-rows: min-content 0fr;
+    transition: all ease-in-out 0.3s;
+
+    header.Accordion-header {
+        padding: var(--space-2) var(--space-4);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-width: 1px 1px 0 1px;
+        border-color: var(--gray-4);
+        border-style: solid;
+
+        button.Accordion-trigger {
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+        }
+    }
+
+    section.Accordion-content {
+        min-height: 0;
+        transition: all ease-in-out 0.3s;
+        overflow: hidden;
+
+        border-width: 0 1px 1px 1px;
+        border-color: var(--gray-4);
+        border-style: solid;
+    }
+
+    &[data-expanded] {
+        grid-template-rows: min-content 1fr;
+
+        section.Accordion-content {
+        }
+    }
+}

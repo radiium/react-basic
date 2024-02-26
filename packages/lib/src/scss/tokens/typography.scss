@@ -1,0 +1,50 @@
+///
+/// TYPOGRAPHY TOKENS
+///
+
+:root {
+    --font-size-1: 1.2rem;
+    --font-size-2: 1.4rem;
+    --font-size-3: 1.6rem;
+    --font-size-4: 1.8rem;
+    --font-size-5: 2rem;
+    --font-size-6: 2.4rem;
+    --font-size-7: 2.8rem;
+    --font-size-8: 3.5rem;
+    --font-size-9: 6rem;
+
+    --line-height-1: 1.6rem;
+    --line-height-2: 2rem;
+    --line-height-3: 2.4rem;
+    --line-height-4: 2.6rem;
+    --line-height-5: 2.8rem;
+    --line-height-6: 3rem;
+    --line-height-7: 3.6rem;
+    --line-height-8: 4rem;
+    --line-height-9: 6.5rem;
+
+    --letter-spacing-1: 0.0025em;
+    --letter-spacing-2: 0em;
+    --letter-spacing-3: 0em;
+    --letter-spacing-4: -0.0025em;
+    --letter-spacing-5: -0.005em;
+    --letter-spacing-6: -0.00625em;
+    --letter-spacing-7: -0.0075em;
+    --letter-spacing-8: -0.01em;
+    --letter-spacing-9: -0.025em;
+
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    --font-sans: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    --font-mono: JetBrains Mono, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    --font-serif: Georgia, Cambria, Times New Roman, Times, serif;
+
+    --default-font-size: var(--font-size-3);
+    --default-font-weight: var(--font-weight-regular);
+    --default-line-height: var(--line-height-1);
+    --default-letter-spacing: var(--letter-spacing-1);
+    --default-font-family: var(--font-sans);
+}

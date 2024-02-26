@@ -1,0 +1,120 @@
+///
+/// SPACE UTILITIES
+///
+
+$spaces: (
+	'0': var(--space-0),
+	'1': var(--space-1),
+	'2': var(--space-2),
+	'3': var(--space-3),
+	'4': var(--space-4),
+	'5': var(--space-5),
+	'6': var(--space-6),
+	'7': var(--space-7),
+	'8': var(--space-8),
+	'9': var(--space-9)
+);
+
+// MARGINS
+
+.no-m {
+	margin: 0;
+}
+.no-mt {
+	margin-top: 0;
+}
+.no-mb {
+	margin-bottom: 0;
+}
+.no-ml {
+	margin-left: 0;
+}
+.no-mr {
+	margin-right: 0;
+}
+.no-my {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.no-mx {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+@each $key, $value in $spaces {
+	.mt-#{$key} {
+		margin-top: $value;
+	}
+	.mb-#{$key} {
+		margin-bottom: $value;
+	}
+	.ml-#{$key} {
+		margin-left: $value;
+	}
+	.mr-#{$key} {
+		margin-right: $value;
+	}
+	.my-#{$key} {
+		margin-top: $value;
+		margin-bottom: $value;
+	}
+	.mx-#{$key} {
+		margin-left: $value;
+		margin-right: $value;
+	}
+	.m-#{$key} {
+		margin: $value;
+	}
+}
+
+// PADDINGS
+
+.no-m {
+	padding: 0;
+}
+.no-pt {
+	padding-top: 0;
+}
+.no-pb {
+	padding-bottom: 0;
+}
+.no-pl {
+	padding-left: 0;
+}
+.no-pr {
+	padding-right: 0;
+}
+.no-py {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.no-px {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+@each $key, $value in $spaces {
+	.pt-#{$key} {
+		padding-top: $value;
+	}
+	.pb-#{$key} {
+		padding-bottom: $value;
+	}
+	.pl-#{$key} {
+		padding-left: $value;
+	}
+	.pr-#{$key} {
+		padding-right: $value;
+	}
+	.py-#{$key} {
+		padding-top: $value;
+		padding-bottom: $value;
+	}
+	.px-#{$key} {
+		padding-left: $value;
+		padding-right: $value;
+	}
+	.p-#{$key} {
+		padding: $value;
+	}
+}

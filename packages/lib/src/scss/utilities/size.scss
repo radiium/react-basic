@@ -1,0 +1,95 @@
+///
+/// SIZE UTILITIES
+///
+
+// width
+// --------------------------------------------------
+
+.width-auto {
+	width: auto;
+}
+.width-min {
+	width: min-content;
+}
+.width-max {
+	width: max-content;
+}
+.width-0 {
+	width: 0;
+}
+.width-1 {
+	width: var(--space-1);
+}
+.width-2 {
+	width: var(--space-2);
+}
+.width-3 {
+	width: var(--space-3);
+}
+.width-4 {
+	width: var(--space-4);
+}
+.width-5 {
+	width: var(--space-5);
+}
+.width-6 {
+	width: var(--space-6);
+}
+.width-7 {
+	width: var(--space-7);
+}
+.width-8 {
+	width: var(--space-8);
+}
+.width-9 {
+	width: var(--space-9);
+}
+.width-100 {
+	width: 100%;
+}
+
+// height
+// --------------------------------------------------
+
+.height-auto {
+	height: auto;
+}
+.height-min {
+	height: min-content;
+}
+.height-max {
+	height: max-content;
+}
+.height-0 {
+	height: 0;
+}
+.height-1 {
+	height: var(--space-1);
+}
+.height-2 {
+	height: var(--space-2);
+}
+.height-3 {
+	height: var(--space-3);
+}
+.height-4 {
+	height: var(--space-4);
+}
+.height-5 {
+	height: var(--space-5);
+}
+.height-6 {
+	height: var(--space-6);
+}
+.height-7 {
+	height: var(--space-7);
+}
+.height-8 {
+	height: var(--space-8);
+}
+.height-9 {
+	height: var(--space-9);
+}
+.height-100 {
+	height: 100%;
+}

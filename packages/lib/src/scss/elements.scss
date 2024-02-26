@@ -1,0 +1,241 @@
+///
+/// ELEMENTS HTML
+///
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--default-font-family);
+	font-weight: var(--font-weight-bold);
+	line-height: normal;
+	margin: 0;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+	-ms-word-break: break-all;
+}
+
+h1 {
+	font-size: var(--font-size-9);
+	line-height: var(--line-height-9);
+	letter-spacing: var(--letter-spacing-9);
+}
+h2 {
+	font-size: var(--font-size-8);
+	line-height: var(--line-height-8);
+	letter-spacing: var(--letter-spacing-8);
+}
+h3 {
+	font-size: var(--font-size-7);
+	line-height: var(--line-height-7);
+	letter-spacing: var(--letter-spacing-7);
+}
+h4 {
+	font-size: var(--font-size-6);
+	line-height: var(--line-height-6);
+	letter-spacing: var(--letter-spacing-6);
+}
+h5 {
+	font-size: var(--font-size-5);
+	line-height: var(--line-height-5);
+	letter-spacing: var(--letter-spacing-5);
+}
+h6 {
+	font-size: var(--font-size-4);
+	line-height: var(--line-height-4);
+	letter-spacing: var(--letter-spacing-4);
+}
+
+p {
+	font-size: var(--font-size-3);
+	line-height: var(--line-height-3);
+	letter-spacing: var(--letter-spacing-3);
+	margin: 0;
+}
+
+small {
+	font-size: var(--font-size-2);
+	line-height: var(--line-height-2);
+	letter-spacing: var(--letter-spacing-2);
+}
+
+sub,
+sup {
+	font-size: var(--font-size-1);
+	line-height: var(--line-height-1);
+	letter-spacing: var(--letter-spacing-1);
+}
+
+hr {
+	height: 2px;
+	width: 100%;
+	border: none;
+	background-color: var(--slate-10);
+	margin-top: var(--space-4);
+	margin-bottom: var(--space-4);
+}
+
+details {
+	position: relative;
+
+	summary {
+		cursor: pointer;
+		padding: var(--space-4) var(--space-4);
+		border-radius: var(--radius-3);
+
+		&:hover {
+			background-color: var(--background-level-2);
+		}
+
+		&::marker,
+		&::-webkit-details-marker {
+			display: none;
+		}
+	}
+
+	&[open] {
+		summary {
+			margin-bottom: var(--space-4);
+			background-color: var(--background-level-2);
+		}
+	}
+}
+
+blockquote {
+	margin: 0 0 0 0;
+	padding: var(--space-2) var(--space-3);
+	border-left: var(--space-1) solid var(--slate-10);
+}
+
+a {
+	color: var(--slate-10);
+	text-decoration: none;
+	cursor: pointer;
+
+	&:visited {
+		color: var(--slate-8);
+		opacity: 0.8;
+	}
+}
+
+ul,
+ol {
+	margin: 0;
+
+	li {
+		padding: var(--space-1) 0;
+
+		> ul,
+		> ol {
+			margin-top: var(--space-2);
+		}
+	}
+}
+
+// img,
+// video {
+//     height: auto;
+//     max-width: 100%;
+//     margin-top: 0px;
+//     margin-bottom: 2.5rem;
+// }
+
+// pre {
+//     background-color: var(--color-bg-alt);
+//     display: block;
+//     padding: 1em;
+//     overflow-x: auto;
+//     margin-top: 0px;
+//     margin-bottom: 2.5rem;
+// }
+
+// code,
+// kbd,
+// samp {
+//     padding: 0 0.5em;
+//     background-color: var(--color-bg-alt);
+//     white-space: pre-wrap;
+// }
+
+// pre > code {
+//     padding: 0;
+//     background-color: transparent;
+//     white-space: pre;
+// }
+
+// table {
+//     text-align: justify;
+//     width: 100%;
+//     border-collapse: collapse;
+
+//     td,
+//     th {
+//         padding: 0.5em;
+//         border-bottom: 1px solid var(--color-bg-alt);
+//     }
+// }
+
+// textarea {
+//     border: 1px solid var(--color-text);
+
+//     &:focus {
+//         border: 1px solid var(--color-blossom);
+//     }
+// }
+
+// textarea {
+//     width: 100%;
+// }
+
+// textarea,
+// select,
+// .input-base {
+//     color: var(--color);
+//     padding: 6px 10px;
+//     margin-bottom: 10px;
+//     background-color: var(--color-bg-alt);
+//     border: 1px solid var(--color-bg-alt);
+//     border-radius: var(--radius-3);
+//     box-shadow: none;
+//     box-sizing: border-box;
+
+//     &:focus {
+//         // border: 1px solid var(--color-blossom);
+//         // outline: 0;
+//     }
+// }
+
+// .input-base[type='checkbox']:focus {
+//     outline: 1px dotted var(--color-blossom);
+// }
+
+// label,
+// legend,
+// fieldset {
+//     display: block;
+//     margin: 0 0 0.5rem 0;
+//     font-weight: 600;
+// }
+
+// .input-base {
+//     border: 2px solid;
+//     border-radius: 4px;
+//     font-size: 1rem;
+//     margin: 0.25rem;
+//     min-width: 125px;
+//     padding: 0.5rem;
+//     transition: background-color 0.5s ease-out;
+
+//     &:optional {
+//         border-color: gray;
+//     }
+//     &:required {
+//         border-color: black;
+//     }
+//     &:invalid {
+//         border-color: red;
+//     }
+// }

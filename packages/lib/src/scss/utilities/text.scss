@@ -1,0 +1,39 @@
+///
+/// TEXT UTILITIES
+///
+
+// Text align
+// --------------------------------------------------
+
+.text-left {
+	text-align: left;
+}
+.text-uppercase {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+
+///Text transform
+// --------------------------------------------------
+
+.text-lowercase {
+	text-transform: lowercase;
+}
+.text-uppercase {
+	text-transform: uppercase;
+}
+.text-capitalize {
+	text-transform: capitalize;
+}
+
+// Others
+// --------------------------------------------------
+
+.text-ellipsis {
+	width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
