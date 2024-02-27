@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { Button, Flex, Text, useThemeContext } from '@repo/lib';
+import { Button, Flex, Text, useThemeContext } from 'react-basic';
 import { ReactNode } from 'react';
 
 const formatPageName = (name: string): string => {
@@ -104,7 +104,9 @@ export const Sidebar = () => {
                 ))}
             </Flex>
 
-            <Flex p="3" style={{ width: '100%' }}>
+            <Flex p="3" style={{ width: '100%' }} direction='column' alignItems='center'>
+
+                <Text>v{__VERSION__}</Text>
                 <Button
                     fullWidth
                     onClick={() => {

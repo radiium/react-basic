@@ -1,4 +1,4 @@
-import { Select, Sizes1To3, SelectOption } from '@repo/lib';
+import { Select, Sizes1To3, SelectOption } from 'react-basic';
 import { DemoPage, DemoSection, DemoField } from '../components/FormField';
 
 const Field = ({

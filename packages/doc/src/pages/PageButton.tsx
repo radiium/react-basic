@@ -1,4 +1,4 @@
-import { Flex, Button, Colors, Variants, Sizes1To4, Aligns } from '@repo/lib';
+import { Flex, Button, Colors, Variants, Sizes1To4, Aligns } from 'react-basic';
 import { Plus } from '../components/icons/Plus';
 import { DemoPage, DemoSection, DemoField } from '../components/FormField';
 

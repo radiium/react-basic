@@ -1,4 +1,4 @@
-import { Input, Aligns, InputTypes, Sizes1To3 } from '@repo/lib';
+import { Input, Aligns, InputTypes, Sizes1To3 } from 'react-basic';
 import { DemoPage, DemoSection, DemoField } from '../components/FormField';
 
 export function PageInput() {

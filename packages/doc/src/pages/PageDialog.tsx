@@ -1,4 +1,4 @@
-import { Flex, Dialog, Text, Button, useOpenClose, Sizes1To4, DialogProps } from '@repo/lib';
+import { Flex, Dialog, Text, Button, useOpenClose, Sizes1To4, DialogProps } from 'react-basic';
 import { DemoPage, DemoSection } from '../components/FormField';
 
 const DialogSampleSize = ({ size }: { size: DialogProps['size'] }) => {

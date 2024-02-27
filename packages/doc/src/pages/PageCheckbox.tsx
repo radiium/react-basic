@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Checkbox, Flex, Text, Sizes1To3, Colors  } from '@repo/lib';
+import { Checkbox, Flex, Text, Sizes1To3, Colors  } from 'react-basic';
 import { DemoPage, DemoSection } from '../components/FormField';
 
 const Field = ({

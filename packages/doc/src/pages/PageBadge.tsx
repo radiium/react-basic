@@ -1,4 +1,4 @@
-import { Badge, Flex, Colors, Sizes1To2, VariantsBadge } from '@repo/lib/src';
+import { Badge, Flex, Colors, Sizes1To2, VariantsBadge } from 'react-basic';
 import { DemoPage, DemoSection } from '../components/FormField';
 
 export function PageBadge() {

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
     KeyboardEvent,
     MouseEvent,
@@ -70,7 +69,7 @@ const Dialog = forwardRef<DialogRef, DialogProps>((props, forwardedRef) => {
             dialogRef.current?.close();
             blockScroll && document.body.classList.remove('Dialog-open');
         }
-    }, [open]);
+    }, [open, blockScroll]);
 
     return (
         <dialog

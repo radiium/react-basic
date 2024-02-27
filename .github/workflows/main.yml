@@ -3,20 +3,45 @@ on:
   push:
     branches: ['main']
 jobs:
-  build-all:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set up Node18
+      - name: Set up Node 20
         uses: actions/setup-node@v4
         with:
-          node-version: 18
-          cache: 'npm'
+          node-version: 20
+          registry-url: 'https://registry.npmjs.org'
+          cache: 'yarn'
       - name: Install yarn
         run: npm install yarn -g
       - name: Install dependencies
-        run: yarn
-      - name: Build
+        run: yarn --frozen-lockfile
+      - name: Build doc and package
         run: yarn build
-  
+
+  # Deploy doc
+  deploy-page:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  # Deploy package
+  deploy-package:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish package
+        run: npm publish --dry-run --workspace=react-basic
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

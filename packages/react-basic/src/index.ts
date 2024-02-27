@@ -16,7 +16,7 @@ import Select from './components/Select';
 import Switch from './components/Switch';
 import Text from './components/Text';
 import Textarea from './components/Textarea';
-import ThemeProvider, { useThemeContext } from './components/Theme';
+import ThemeProvider from './components/Theme';
 
 export {
     Accordion,
@@ -40,6 +40,8 @@ export {
 // Hooks
 import useArray from './hooks/useArray';
 import useOpenClose from './hooks/useOpenClose';
+import { useThemeContext } from './components/Theme/useThemeContext';
+
 export { useArray, useOpenClose, useThemeContext };
 
 export * from './constants';
@@ -103,3 +105,5 @@ export type {
     ThemeSchemeType,
     ThemeContextType,
 };
+
+export const version = __VERSION__;

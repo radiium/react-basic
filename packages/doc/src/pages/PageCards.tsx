@@ -1,4 +1,4 @@
-import { Card, Text, Sizes1To5 } from '@repo/lib';
+import { Card, Text, Sizes1To5 } from 'react-basic';
 import { DemoPage, DemoSection } from '../components/FormField';
 
 export function PageCard() {

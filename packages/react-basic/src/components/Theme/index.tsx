@@ -1,4 +1,4 @@
-import { ThemeProvider, useThemeContext } from './Theme';
+import { ThemeProvider } from './Theme';
 import type {
     ThemeProps,
     ThemeStrategyType,
@@ -7,5 +7,4 @@ import type {
 } from './Theme.types';
 
 export default ThemeProvider;
-export { useThemeContext };
 export type { ThemeProps, ThemeStrategyType, ThemeSchemeType, ThemeContextType };

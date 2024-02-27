@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { ComponentPropsWithRef, forwardRef } from 'react';
 
 export interface IconProps extends ComponentPropsWithRef<'svg'> {
@@ -41,6 +42,7 @@ const X = forwardRef<SVGSVGElement, IconProps>((props, forwarded) => {
         </svg>
     );
 });
+
 X.displayName = 'X';
 
 export { CarretDown, X };

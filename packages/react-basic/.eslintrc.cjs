@@ -18,7 +18,7 @@ module.exports = {
     ],
     settings: {
         react: {
-            version: detect
+            version: "detect"
         }
     },
     parser: "@typescript-eslint/parser",
@@ -29,9 +29,10 @@ module.exports = {
     },
     rules: {
         "react-refresh/only-export-components": [
-            warn,
+            "warn",
             {
-                allowConstantExport: true
+                allowConstantExport: true,
+                allowExportNames: ["useThemeContext, Loading"]
             }
         ]
     },

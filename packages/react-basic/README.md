@@ -1,3 +1,3 @@
-# `@repo/lib`
+# `react-basic`
 
 Small react library

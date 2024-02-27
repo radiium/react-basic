@@ -1,4 +1,4 @@
-import { Flex, Text, Accordion } from '@repo/lib';
+import { Flex, Text, Accordion } from 'react-basic';
 import { DemoPage, DemoSection } from '../components/FormField';
 
 export function PageAccordion() {

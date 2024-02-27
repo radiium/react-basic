@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { Flex, Text } from '@repo/lib';
+import { Flex, Text } from 'react-basic';
 
 export const DemoSection = ({
     label,

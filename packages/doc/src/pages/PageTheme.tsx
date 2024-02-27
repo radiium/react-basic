@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { Card, Button, Flex, Input } from '@repo/lib';
+import { Card, Button, Flex, Input } from 'react-basic';
 import { DemoPage, DemoSection } from '../components/FormField';
 
 export const Demo = ({ children }: { children?: ReactNode }) => {

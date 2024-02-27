@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import { Flex } from '@repo/lib';
+import { Flex } from 'react-basic';
 import { Sidebar } from '../components/Sidebar';
 
 export function PageLayout() {

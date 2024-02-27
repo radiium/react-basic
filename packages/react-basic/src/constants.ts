@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable prettier/prettier */
 export const size0 = '0' as const;
 export const size1 = '1' as const;
 export const size2 = '2' as const;
@@ -134,32 +132,30 @@ export function extractLayoutProps<T extends LayoutProps>(props: T) {
 
 type CleanableProps = Partial<PaddingProps & MarginProps & LayoutProps>;
 export function cleanProps<T extends CleanableProps>(props: T) {
-    const {
-        m,
-        mx,
-        my,
-        mt,
-        mr,
-        mb,
-        ml,
-        p,
-        px,
-        py,
-        pt,
-        pr,
-        pb,
-        pl,
-        position, //
-        width,
-        height,
-        inset,
-        top,
-        bottom,
-        left,
-        right,
-        shrink,
-        grow,
-        ...rest
-    } = props;
-    return rest;
+    const copy = { ...props };
+    delete copy.m;
+    delete copy.mx;
+    delete copy.my;
+    delete copy.mt;
+    delete copy.mr;
+    delete copy.mb;
+    delete copy.ml;
+    delete copy.p;
+    delete copy.px;
+    delete copy.py;
+    delete copy.pt;
+    delete copy.pr;
+    delete copy.pb;
+    delete copy.pl;
+    delete copy.position;
+    delete copy.width;
+    delete copy.height;
+    delete copy.inset;
+    delete copy.top;
+    delete copy.bottom;
+    delete copy.left;
+    delete copy.right;
+    delete copy.shrink;
+    delete copy.grow;
+    return copy;
 }

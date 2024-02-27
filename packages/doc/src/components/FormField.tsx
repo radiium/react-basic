@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { Flex, Text, Sizes1To9 } from '@repo/lib';
+import { Flex, Text, Sizes1To9 } from 'react-basic';
 
 export const DemoPage = ({ title, children }: { title?: string; children?: ReactNode }) => {
     return (

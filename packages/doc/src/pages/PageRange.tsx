@@ -1,4 +1,4 @@
-import { Range, Sizes1To3, Colors } from '@repo/lib';
+import { Range, Sizes1To3, Colors } from 'react-basic';
 import { DemoField, DemoPage, DemoSection } from '../components/FormField';
 
 export function PageRange() {

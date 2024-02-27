@@ -1,21 +1,10 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Fragment, useEffect, useState } from 'react';
 import { useThemeSystem } from './useThemeSystem';
 import { useThemeStorage } from './useThemeStorage';
 import { defaultThemeProps } from './Theme.props';
-import { createContext, useContext } from 'react';
-import {
-    ThemeContextType,
-    ThemeProps,
-    ThemeSchemeType,
-    ThemeStrategy,
-    ThemeStrategyType,
-} from './Theme.types';
-
-const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
-const useThemeContext = (): ThemeContextType | undefined => {
-    return useContext(ThemeContext);
-};
+import { ThemeProps, ThemeSchemeType, ThemeStrategy, ThemeStrategyType } from './Theme.types';
+import { ThemeContext } from './Theme.context';
+import { useThemeContext } from './useThemeContext';
 
 const resolveTheme = (
     strategy: ThemeStrategyType,
@@ -127,5 +116,4 @@ export const ThemeProvider = (props: ThemeProps) => {
 };
 ThemeProvider.displayName = 'ThemeProvider';
 
-export { useThemeContext };
 export default ThemeProvider;

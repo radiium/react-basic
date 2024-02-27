@@ -1,4 +1,4 @@
-import { Text, Colors, Sizes1To9, Weights, Aligns } from '@repo/lib';
+import { Text, Colors, Sizes1To9, Weights, Aligns } from 'react-basic';
 import { DemoPage, DemoSection } from '../components/FormField';
 
 export function PageText() {

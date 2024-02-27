@@ -1,3 +1,3 @@
-# `@repo/doc`
+# `react-basic-doc`
 
-Doc site of `@repo/lib`
+Doc site of `react-basic`
