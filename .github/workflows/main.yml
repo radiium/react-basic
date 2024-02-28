@@ -12,6 +12,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # SETUP
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set up Node 20
@@ -25,6 +26,10 @@ jobs:
         run: yarn --frozen-lockfile
       - name: Build doc and package
         run: yarn build
+
+      # PAGE
+      - name: '🔧 Setup Pages'
+        uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -33,6 +38,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      # PACKAGE
       - name: Debug
         run: ls -la
       - name: Publish package

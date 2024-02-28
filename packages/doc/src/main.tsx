@@ -20,9 +20,9 @@ import { PageRange } from './pages/PageRange.tsx';
 import { PageTheme } from './pages/PageTheme.tsx';
 import { PageGettingstarted } from './pages/PageGettingstarted.tsx';
 import { ThemeProvider } from 'react-basic';
+import { Loading } from './components/Loading.tsx';
 
 import './index.css';
-import { Loading } from './components/Loading.tsx';
 
 const router = createBrowserRouter([
     {
