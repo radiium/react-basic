@@ -20,6 +20,11 @@ jobs:
         run: yarn --frozen-lockfile
       - name: Build doc and package
         run: yarn build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          name: 'github-pages'
+          path: 'packages/doc/dist'
 
   # Deploy doc
   deploy-page:
@@ -41,6 +46,8 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Debug
+        run: ls -la
       - name: Publish package
         run: npm publish --dry-run --workspace=react-basic
         env:
