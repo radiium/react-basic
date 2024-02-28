@@ -21,7 +21,7 @@ jobs:
       - name: Build doc and package
         run: yarn build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           name: 'github-pages'
           path: 'packages/doc/dist'
